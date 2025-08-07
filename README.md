@@ -117,7 +117,7 @@ month=aug }
 ```
 
 ## Acknowledgements
-We sincerely thank the creators of the MFTC [cite: 553], MFRC [cite: 554], and MOTIV  datasets for making their work publicly available.
+We sincerely thank the creators of the MFTC , MFRC , and MOTIV  datasets for making their work publicly available.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
