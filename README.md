@@ -66,10 +66,7 @@ pip install -r requirements.txt
 ```
 
 ### Training the Model
-To train the dual-path model on the MFTC dataset, run:
-```bash
-python train.py --model dual_path --dataset MFTC --data_path /path/to/mftc_data.csv --output_dir ./models/
-```
+To train the dual-path model on the MFTC dataset
 The training process follows a multi-stage protocol to ensure stable integration of the encoders:
 1.  **Stage 1**: Train the contextual path (ROBERTa-MLP) only.
 2.  **Stage 2**: Train the moral concept path (GAT-eMFD) independently.
@@ -81,7 +78,7 @@ The training process follows a multi-stage protocol to ensure stable integration
 ### MFRC and MFTC Results
 Our full dual-path model (`ROBERTa + GAT (Full)`) demonstrates superior performance compared to baselines and ablated versions.
 
-[cite_start]**Table: Model Performance on MFRC and MFTC (Macro F1-scores)** 
+**Table: Model Performance on MFRC and MFTC (Macro F1-scores)** 
 | Model | MFRC Macro F1 | MFTC Macro F1 |
 | :--- | :---: | :---: |
 | BERT (uncased) | 0.33 | 0.69 |
@@ -92,7 +89,7 @@ Our full dual-path model (`ROBERTa + GAT (Full)`) demonstrates superior performa
 ### MOTIV Results
 The five-modality fusion model shows promise but also highlights the challenge of severe class imbalance for underrepresented foundations.
 
-[cite_start]**Table: Per-Class F1-scores on MOTIV** [cite: 486]
+**Table: Per-Class F1-scores on MOTIV** [cite: 486]
 | Class | F1-score |
 | :--- | :---: |
 | Care/Harm | 0.84 |
