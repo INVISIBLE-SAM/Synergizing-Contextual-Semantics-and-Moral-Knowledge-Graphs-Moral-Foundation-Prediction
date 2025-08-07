@@ -72,7 +72,7 @@ Our full dual-path model (`ROBERTa + GAT (Full)`) demonstrates superior performa
 ### MOTIV Results
 The five-modality fusion model shows promise but also highlights the challenge of severe class imbalance for underrepresented foundations.
 
-**Table: Per-Class F1-scores on MOTIV** [cite: 486]
+**Table: Per-Class F1-scores on MOTIV** 
 | Class | F1-score |
 | :--- | :---: |
 | Care/Harm | 0.84 |
