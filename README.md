@@ -31,7 +31,7 @@ MOTIV extends the dual-path design by adding three more encoders for non-textual
 
 [cite_start]The five modality-specific embeddings are integrated using a heterogeneous fusion module that employs cross-attention, self-attention, and a gating mechanism[cite: 281, 403].
 
-![MOTIV Architecture](https://i.imgur.com/your-image-link-here-2.png)
+![MOTIV Architecture](MOTIV_arch (1).png)
 [cite_start]*Figure 3 from the paper, showing the five-modality architecture[cite: 363]. You would replace the link with an actual uploaded image.*
 
 ## Datasets
