@@ -18,9 +18,10 @@ The core of our model is a dual-path system that processes text through two para
 1.  **Contextual Path**: A fine-tuned `roberta-base` model followed by a 2-layer MLP to generate a 256-dimensional contextual embedding from the input text.
 2.  **Moral Concept Path**: An encoder that identifies moral concepts using the eMFD lexicon, builds a fully connected graph of these concepts, and uses a Graph Attention Network (GAT) to produce a 256-dimensional moral graph embedding.
 
-[cite_start]These two pathways are fused using a cross-attention mechanism before being passed to a final classifier.
+These two pathways are fused using a cross-attention mechanism before being passed to a final classifier.
 
 ![Dual-Path Architecture](mftc_arc.jpeg)
+
 *Figure 2 from the paper, showing the dual-path architecture. You would replace the link with an actual uploaded image.*
 
 ### 2. MOTIV: A Five-Modality Framework
@@ -35,10 +36,10 @@ The five modality-specific embeddings are integrated using a heterogeneous fusio
 *Figure 3 from the paper, showing the five-modality architecture. You would replace the link with an actual uploaded image.*
 
 ## Datasets
-[cite_start]Our experiments leverage three primary corpora and one lexicon, which were harmonized into a unified five-foundation schema (plus a Non-Moral category).
+Our experiments leverage three primary corpora and one lexicon, which were harmonized into a unified five-foundation schema (plus a Non-Moral category).
 
 - **MFTC (Moral Foundations Twitter Corpus)**: ~35,000 tweets annotated for moral sentiment across 7 domains.
-  - **Access**: [Open Science Framework](https://osf.io/k5n7y/) [cite: 152, 158]
+  - **Access**: [Open Science Framework](https://osf.io/k5n7y/) 
 - **MFRC (Moral Foundations Reddit Corpus)**: 16,123 Reddit comments from 12 morality-focused subreddits.
   - **Access**: [Hugging Face Datasets](https://huggingface.co/datasets/USC-MOLA-Lab/MFRC) 
 - **MOTIV Dataset**: 1,483 geotagged tweets related to COVID-19 stay-at-home orders, enriched with spatial, temporal, and behavioral metadata.
@@ -46,24 +47,6 @@ The five modality-specific embeddings are integrated using a heterogeneous fusio
 - **eMFD (extended Moral Foundations Dictionary)**: A lexicon that maps words to probabilistic distributions across the five moral foundations.
   - **Access**: [Open Science Framework](https://osf.io/vw85e/) 
 
-## Getting Started
-
-### Prerequisites
-- Python 3.8+
-- PyTorch
-- Transformers
-- Pandas
-- Scikit-learn
-
-### Installation
-```bash
-# Clone the repository
-git clone [https://github.com/your-username/moral-foundation-prediction.git](https://github.com/your-username/moral-foundation-prediction.git)
-cd moral-foundation-prediction
-
-# Install dependencies
-pip install -r requirements.txt
-```
 
 ### Training the Model
 To train the dual-path model on the MFTC dataset
