@@ -41,9 +41,9 @@ The five modality-specific embeddings are integrated using a heterogeneous fusio
   - **Access**: [Open Science Framework](https://osf.io/k5n7y/) [cite: 152, 158]
 - **MFRC (Moral Foundations Reddit Corpus)**: 16,123 Reddit comments from 12 morality-focused subreddits.
   - **Access**: [Hugging Face Datasets](https://huggingface.co/datasets/USC-MOLA-Lab/MFRC) 
-- **MOTIV Dataset**: 1,483 geotagged tweets related to COVID-19 stay-at-home orders, enriched with spatial, temporal, and behavioral metadata[cite: 112, 141].
+- **MOTIV Dataset**: 1,483 geotagged tweets related to COVID-19 stay-at-home orders, enriched with spatial, temporal, and behavioral metadata.
   - **Access**: [Open Science Framework](https://osf.io/ygkzn/) 
-- **eMFD (extended Moral Foundations Dictionary)**: A lexicon that maps words to probabilistic distributions across the five moral foundations[cite: 148].
+- **eMFD (extended Moral Foundations Dictionary)**: A lexicon that maps words to probabilistic distributions across the five moral foundations.
   - **Access**: [Open Science Framework](https://osf.io/vw85e/) 
 
 ## Getting Started
